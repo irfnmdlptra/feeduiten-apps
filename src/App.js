@@ -16,6 +16,14 @@ class App extends React.Component {
             <span>Sisa uang kamu tersisa 75% lagi</span>
           </div>
         </div>
+        <div className="row">
+          <div className="col-6">
+            <div className="icon-wrapper">
+              <i className="fa fa-user-circle-o" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div className="col-6"></div>
+        </div>
       </div>
     );
   }
