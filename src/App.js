@@ -19,7 +19,7 @@ class App extends React.Component {
 
         <div className="row">
           <div className="col-6">
-            <div class="card-wrapper p-3">
+            <div class="card-wrapper p-4">
               <div className="icon-wrapper">
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
