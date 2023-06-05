@@ -25,3 +25,12 @@ h2 {
   line-height: 48px;
   color: #454545;
 }
+
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #a1a1a1;
+}
