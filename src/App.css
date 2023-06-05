@@ -34,6 +34,7 @@ h3 {
   color: #454545;
 }
 
+
 .title-sm {
   font-family: "Poppins";
   font-style: normal;
@@ -69,5 +70,9 @@ h3 {
   height: 30px;
   background: #e4e5ff;
   border-radius: 6px;
+  color: #3c3dbf;
+}
+
+.text-ungu {
   color: #3c3dbf;
 }
