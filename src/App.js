@@ -35,8 +35,9 @@ class App extends React.Component {
         <div className="row">
           <div class="col-12">
             <h2>Ringkasan Transaksi</h2>
-            <div className="wrapper">
-              
+            <div className="wrapper-button">
+      <button>Pemasukan</button>
+      <button>Pemasukan <i class="bi bi-plus-square"></i></button>
             </div>
           </div>
         </div>
