@@ -86,6 +86,12 @@ h4 {
 .button {
   border: none;
   border-radius: 10px;
+  height: 37px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .btn-ungu {
@@ -93,5 +99,5 @@ h4 {
 }
 
 .btn-pink {
-  background-color: #3c3dbf;
+  background-color: #ff3666;
 }
