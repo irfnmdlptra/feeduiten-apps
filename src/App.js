@@ -48,14 +48,16 @@ class App extends React.Component {
         </div>
 
         <div class="row">
-          <div class="col-12">
-            <div class="d-flex"></div>
+          <div class="col-12 d-flex justify-content-between">
+            <div class="d-flex">
+
             <div class="icon-wrapper">
             <i className="bi bi-wallet2" aria-hidden="true"></i>
             </div>
             <div class="transaction">
               <h6>Menerima Kiriman</h6>
               <span class="title">1 Juli 2023</span>
+            </div>
             </div>
             <h5 class="money">Rp.1.000.000</h5>
           </div>
