@@ -31,7 +31,11 @@ class App extends React.Component {
             </div>
           </div>
         
-        
+        </div>
+        <div className="row">
+          <div class="col-12">
+            <h2></h2>
+          </div>
         </div>
       </div>
     );
