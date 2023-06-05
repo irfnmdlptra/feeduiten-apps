@@ -17,7 +17,7 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mt-4">
           <div className="col-6">
             <div class="card-wrapper p-4">
               <div className="icon-wrapper">
