@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css";
 
 class App extends React.Component {
-  constructor() {
-    super();
-  }
+  // constructor() {
+  //   super();
+  // }
   render() {
     return (
       <div className="container">
@@ -18,13 +18,17 @@ class App extends React.Component {
         </div>
         <div className="row">
           <div className="col-6">
-            <div className="icon-wrapper">
-              <i className="bi bi-wallet2" aria-hidden="true"></i>
+            <div class="card-wrapper">
+              <div className="icon-wrapper">
+                <i className="bi bi-wallet2" aria-hidden="true"></i>
+              </div>
+              <span className="title">Pemasukan-</span>
+              <h3>Rp. 2.000.000,-</h3>
             </div>
-            <span className="title">Pemasukan-</span>
-            <h3>Rp. 2.000.000,-</h3>
-            <span className="title text-ungu">50</span>
-            <span className="title">Transaksi</span>
+            <div>
+              <span className="title text-ungu">50</span>
+              <span className="title"> Transaksi</span>
+            </div>
           </div>
           <div className="col-6"></div>
         </div>
