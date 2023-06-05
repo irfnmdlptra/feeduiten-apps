@@ -21,6 +21,7 @@ class App extends React.Component {
             <div className="icon-wrapper">
               <i className="bi bi-wallet2" aria-hidden="true"></i>
             </div>
+            <span>Rp.</span>
           </div>
           <div className="col-6"></div>
         </div>
