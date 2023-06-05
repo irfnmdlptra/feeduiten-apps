@@ -64,10 +64,10 @@ class App extends React.Component {
         <div className="row">
           <div className="col-12 d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
-              <div className="icon-wrapper">
+              <div className="icon-wrapper ">
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
-              <div className="transaction">
+              <div className="transaction ms-2">
                 <h6>Menerima Kiriman</h6>
                 <span className="title">1 Juli 2023</span>
               </div>

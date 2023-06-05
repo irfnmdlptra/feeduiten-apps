@@ -42,6 +42,14 @@ h4 {
   color: #3c3dbf !important;
 }
 
+h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #454545;
+}
+
 .title-sm {
   font-family: "Poppins";
   font-style: normal;
