@@ -16,6 +16,7 @@ class App extends React.Component {
             <span className="title">Sisa uang kamu tersisa 75% lagi</span>
           </div>
         </div>
+
         <div className="row">
           <div className="col-6">
             <div class="card-wrapper">
@@ -31,6 +32,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+
         <div className="row">
           <div class="col-12 d-flex align-items-center justify-content-between">
             <h2>Ringkasan Transaksi</h2>
@@ -50,6 +52,7 @@ class App extends React.Component {
             <div class="icon-wrapper">
             <i className="bi bi-wallet2" aria-hidden="true"></i>
             </div>
+            
           </div>
         </div>
       </div>
