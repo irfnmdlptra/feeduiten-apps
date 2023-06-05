@@ -43,7 +43,15 @@ h2 {
 }
 
 .icon-wrapper {
-  width: 20px;
-  height: 18.18px;
-  background: #3c3dbf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 30px;
+  height: 30px;
+  background: #e4e5ff;
+  border-radius: 6px;
+  color: #3c3dbf;
 }
