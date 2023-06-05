@@ -30,19 +30,8 @@ class App extends React.Component {
               <span className="title"> Transaksi</span>
             </div>
           </div>
-          <div className="col-6">
-            <div class="card-wrapper">
-              <div className="icon-wrapper">
-                <i className="bi bi-wallet2" aria-hidden="true"></i>
-              </div>
-              <span className="title">Pemasukan-</span>
-              <h3>Rp. 2.000.000,-</h3>
-            </div>
-            <div>
-              <span className="title text-ungu">50</span>
-              <span className="title"> Transaksi</span>
-            </div>
-          </div>
+        
+        
         </div>
       </div>
     );
