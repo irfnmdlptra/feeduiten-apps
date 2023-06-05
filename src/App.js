@@ -25,36 +25,36 @@ class App extends React.Component {
               </div>
               <span className="title-sm">Pemasukan</span>
               <h3 className="fw-bold">Rp. 2.000.000,-</h3>
-            <div>
-              <span className="title-sm text-ungu fw-bold">50</span>
-              <span className="title-sm"> Transaksi</span>
-            </div>
+              <div>
+                <span className="title-sm text-ungu fw-bold">50</span>
+                <span className="title-sm"> Transaksi</span>
+              </div>
             </div>
           </div>
 
           <div className="col-6">
             <div className="card-wrapper p-4">
               <div className="icon-wrapper">
-              <i className="bi bi-cash-stack"></i>
+                <i className="bi bi-cash-stack"></i>
               </div>
               <span className="title-sm">Pemakaian</span>
               <h3 className="fw-bold">Rp. 500.000,-</h3>
-            <div>
-              <span className="title-sm text-ungu fw-bold">50</span>
-              <span className="title-sm"> Transaksi</span>
-            </div>
+              <div>
+                <span className="title-sm text-ungu fw-bold">50</span>
+                <span className="title-sm"> Transaksi</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="row mt-3">
+        <div className="row mt-4">
           <div className="col-12 d-flex align-items-center justify-content-between">
             <h4>Ringkasan Transaksi</h4>
             <div className="wrapper-button d-flex">
-              <button>
+              <button className="button btn-ungu">
                 Pemasukan <i className="bi bi-patch-plus-fill"></i>
               </button>
-              <button>
+              <button className="button btn-pink">
                 Pengeluaran <i className="bi bi-patch-minus-fill"></i>
               </button>
             </div>
