@@ -10,9 +10,9 @@ class App extends React.Component {
       <div className="container py-5">
         <div className="row">
           <div className="col-12 text-center">
-            <h1>FEEDUITEN APPS</h1>
+            <h1 className="fw-bold">FEEDUITEN APPS</h1>
             <hr className="w-75 mx-auto" />
-            <h4>Rp.1.500.00,-</h4>
+            <h2 className="fw-bold">Rp.1.500.00,-</h2>
             <span className="title">Sisa uang kamu tersisa 75% lagi</span>
           </div>
         </div>
