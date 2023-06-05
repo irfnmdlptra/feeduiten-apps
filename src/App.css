@@ -26,7 +26,15 @@ h2 {
   color: #454545;
 }
 
-.title {
+.title-sm {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #a1a1a1;
+}
+.title-md {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
