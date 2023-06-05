@@ -13,7 +13,7 @@ class App extends React.Component {
             <h1 className="fw-bold">FEEDUITEN APPS</h1>
             <hr className="w-75 mx-auto" />
             <h2 className="fw-bold">Rp.1.500.00,-</h2>
-            <span className="title">Sisa uang kamu tersisa 75% lagi</span>
+            <span className="title-sm">Sisa uang kamu tersisa 75% lagi</span>
           </div>
         </div>
 
@@ -23,12 +23,12 @@ class App extends React.Component {
               <div className="icon-wrapper">
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
-              <span className="title">Pemasukan-</span>
+              <span className="title-sm">Pemasukan-</span>
               <h3>Rp. 2.000.000,-</h3>
             </div>
             <div>
               <span className="title text-ungu">50</span>
-              <span className="title"> Transaksi</span>
+              <span className="title-sm"> Transaksi</span>
             </div>
           </div>
         </div>
