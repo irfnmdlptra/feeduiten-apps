@@ -52,7 +52,10 @@ class App extends React.Component {
             <div class="icon-wrapper">
             <i className="bi bi-wallet2" aria-hidden="true"></i>
             </div>
-            
+            <div class="transaction">
+              <h6>Menerima Kiriman</h6>
+              <span class="title">1 Juli 2023</span>
+            </div>
           </div>
         </div>
       </div>
