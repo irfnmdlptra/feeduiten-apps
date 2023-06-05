@@ -44,6 +44,14 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="icon-wrapper">
+            <i className="bi bi-wallet2" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
