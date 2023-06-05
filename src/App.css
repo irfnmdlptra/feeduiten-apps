@@ -42,7 +42,7 @@ h4 {
   color: #3c3dbf !important;
 }
 
-h6 {
+h5 {
   font-style: normal;
   font-weight: 400 !important;
   font-size: 14px;
@@ -50,6 +50,13 @@ h6 {
   color: #454545;
 }
 
+h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3c3dbf;
+}
 .title-sm {
   font-family: "Poppins";
   font-style: normal;
@@ -108,4 +115,13 @@ h6 {
 
 .btn-pink {
   background-color: #ff3666;
+}
+
+.money-in {
+  font-weight: 600 !important;
+  color: #ff3666;
+}
+.money-out {
+  font-weight: 600 !important;
+  color: #3c3dbf;
 }

@@ -68,11 +68,11 @@ class App extends React.Component {
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
               <div className="transaction ms-3 d-flex flex-column">
-                <h6>Menerima Kiriman</h6>
+                <h5>Menerima Kiriman</h5>
                 <span className="title-sm">1 Juli 2023</span>
               </div>
             </div>
-            <h5 className="money">Rp.1.000.000</h5>
+            <h6 className="money-in">Rp.1.000.000</h6>
           </div>
         </div>
       </div>
