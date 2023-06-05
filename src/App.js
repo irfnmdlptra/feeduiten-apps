@@ -49,7 +49,7 @@ class App extends React.Component {
 
         <div className="row">
           <div class="col-12 d-flex align-items-center justify-content-between">
-            <h2>Ringkasan Transaksi</h2>
+            <h4>Ringkasan Transaksi</h4>
             <div className="wrapper-button d-flex">
               <button>
                 Pemasukan <i class="bi bi-patch-plus-fill"></i>
