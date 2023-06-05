@@ -83,3 +83,15 @@ h4 {
 .text-ungu {
   color: #3c3dbf;
 }
+.button {
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-ungu {
+  background-color: #3c3dbf;
+}
+
+.btn-pink {
+  background-color: #3c3dbf;
+}
