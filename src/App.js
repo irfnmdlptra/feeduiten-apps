@@ -67,9 +67,9 @@ class App extends React.Component {
               <div className="icon-wrapper ">
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
-              <div className="transaction ms-2">
+              <div className="transaction ms-3 d-flex flex-column">
                 <h6>Menerima Kiriman</h6>
-                <span className="title">1 Juli 2023</span>
+                <span className="title-sm">1 Juli 2023</span>
               </div>
             </div>
             <h5 className="money">Rp.1.000.000</h5>
