@@ -48,7 +48,7 @@ class App extends React.Component {
         </div>
 
         <div class="row">
-          <div class="col-12 d-flex justify-content-between">
+          <div class="col-12 d-flex justify-content-between align-items-center">
             <div class="d-flex">
 
             <div class="icon-wrapper">
