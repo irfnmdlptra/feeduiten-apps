@@ -30,14 +30,17 @@ class App extends React.Component {
               <span className="title"> Transaksi</span>
             </div>
           </div>
-        
         </div>
         <div className="row">
           <div class="col-12">
             <h2>Ringkasan Transaksi</h2>
             <div className="wrapper-button">
-      <button>Pemasukan <i class="bi bi-patch-plus-fill"></i></button>
-      <button>Pengeluaran <i class="bi bi-patch-minus-fill"></i></button>
+              <button>
+                Pemasukan <i class="bi bi-patch-plus-fill"></i>
+              </button>
+              <button>
+                Pengeluaran <i class="bi bi-patch-minus-fill"></i>
+              </button>
             </div>
           </div>
         </div>
