@@ -35,7 +35,7 @@ class App extends React.Component {
           <div className="col-6">
             <div class="card-wrapper p-4">
               <div className="icon-wrapper">
-                <i className="bi bi-wallet2" aria-hidden="true"></i>
+              <i class="bi bi-cash-stack"></i>
               </div>
               <span className="title-sm">Pemakaian</span>
               <h3 className="fw-bold">Rp. 500.000,-</h3>
