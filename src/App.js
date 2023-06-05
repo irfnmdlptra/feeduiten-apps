@@ -24,10 +24,10 @@ class App extends React.Component {
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
               <span className="title-sm">Pemasukan-</span>
-              <h3>Rp. 2.000.000,-</h3>
+              <h3 className="fw-bold">Rp. 2.000.000,-</h3>
             </div>
             <div>
-              <span className="title text-ungu">50</span>
+              <span className="title-sm text-ungu">50</span>
               <span className="title-sm"> Transaksi</span>
             </div>
           </div>
