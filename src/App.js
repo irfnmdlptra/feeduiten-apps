@@ -19,7 +19,7 @@ class App extends React.Component {
 
         <div className="row mt-4">
           <div className="col-6">
-            <div class="card-wrapper p-4">
+            <div className="card-wrapper p-4">
               <div className="icon-wrapper">
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
@@ -33,9 +33,9 @@ class App extends React.Component {
           </div>
 
           <div className="col-6">
-            <div class="card-wrapper p-4">
+            <div className="card-wrapper p-4">
               <div className="icon-wrapper">
-              <i class="bi bi-cash-stack"></i>
+              <i className="bi bi-cash-stack"></i>
               </div>
               <span className="title-sm">Pemakaian</span>
               <h3 className="fw-bold">Rp. 500.000,-</h3>
@@ -47,32 +47,32 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div className="row">
-          <div class="col-12 d-flex align-items-center justify-content-between">
+        <div className="row mt-3">
+          <div className="col-12 d-flex align-items-center justify-content-between">
             <h4>Ringkasan Transaksi</h4>
             <div className="wrapper-button d-flex">
               <button>
-                Pemasukan <i class="bi bi-patch-plus-fill"></i>
+                Pemasukan <i className="bi bi-patch-plus-fill"></i>
               </button>
               <button>
-                Pengeluaran <i class="bi bi-patch-minus-fill"></i>
+                Pengeluaran <i className="bi bi-patch-minus-fill"></i>
               </button>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-12 d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-              <div class="icon-wrapper">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <div className="icon-wrapper">
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
-              <div class="transaction">
+              <div className="transaction">
                 <h6>Menerima Kiriman</h6>
-                <span class="title">1 Juli 2023</span>
+                <span className="title">1 Juli 2023</span>
               </div>
             </div>
-            <h5 class="money">Rp.1.000.000</h5>
+            <h5 className="money">Rp.1.000.000</h5>
           </div>
         </div>
       </div>
