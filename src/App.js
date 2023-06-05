@@ -7,7 +7,7 @@ class App extends React.Component {
   // }
   render() {
     return (
-      <div className="container">
+      <div className="container py-5">
         <div className="row">
           <div className="col-12">
             <h1>FEEDUITEN APPS</h1>
@@ -49,15 +49,14 @@ class App extends React.Component {
 
         <div class="row">
           <div class="col-12 d-flex justify-content-between align-items-center">
-            <div class="d-flex">
-
-            <div class="icon-wrapper">
-            <i className="bi bi-wallet2" aria-hidden="true"></i>
-            </div>
-            <div class="transaction">
-              <h6>Menerima Kiriman</h6>
-              <span class="title">1 Juli 2023</span>
-            </div>
+            <div class="d-flex align-items-center">
+              <div class="icon-wrapper">
+                <i className="bi bi-wallet2" aria-hidden="true"></i>
+              </div>
+              <div class="transaction">
+                <h6>Menerima Kiriman</h6>
+                <span class="title">1 Juli 2023</span>
+              </div>
             </div>
             <h5 class="money">Rp.1.000.000</h5>
           </div>
