@@ -71,21 +71,17 @@ class App extends React.Component {
         </div>
 
         <div className="row mt-4">
-          {this.state.summary.map(() => {
-            return (
-              <div className="col-12 d-flex align-items-center justify-content-between">
-                <h4>Ringkasan Transaksi</h4>
-                <div className="wrapper-button d-flex">
-                  <button className="button btn-ungu px-3 py-2 me-2">
-                    Pemasukan <i className="bi bi-patch-plus-fill"></i>
-                  </button>
-                  <button className="button btn-pink px-3 py-2">
-                    Pengeluaran <i className="bi bi-patch-minus-fill"></i>
-                  </button>
-                </div>
-              </div>
-            );
-          })}
+          <div className="col-12 d-flex align-items-center justify-content-between">
+            <h4>Ringkasan Transaksi</h4>
+            <div className="wrapper-button d-flex">
+              <button className="button btn-ungu px-3 py-2 me-2">
+                Pemasukan <i className="bi bi-patch-plus-fill"></i>
+              </button>
+              <button className="button btn-pink px-3 py-2">
+                Pengeluaran <i className="bi bi-patch-minus-fill"></i>
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="row mt-4">
