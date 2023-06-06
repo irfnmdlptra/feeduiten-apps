@@ -87,7 +87,7 @@ class App extends React.Component {
         <div className="row mt-4">
           {this.state.summary.map((sum) => {
             return (
-              <div className="col-12 d-flex justify-content-between align-items-center">
+              <div className="col-12 d-flex mb-3 justify-content-between align-items-center">
                 <div className="d-flex align-items-center">
                   <div className="icon-wrapper ">
                     <i className="bi bi-wallet2" aria-hidden="true"></i>
@@ -97,7 +97,7 @@ class App extends React.Component {
                     <span className="title-sm">{sum.tanggal} </span>
                   </div>
                 </div>
-                <h6 className="money-in">Rp. {sum.nominal} </h6>
+                <h6 className="money-in fw-bold">Rp. {sum.nominal} </h6>
               </div>
             );
           })}
