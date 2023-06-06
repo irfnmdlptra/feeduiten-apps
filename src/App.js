@@ -74,10 +74,10 @@ class App extends React.Component {
           <div className="col-12 d-flex align-items-center justify-content-between">
             <h4>Ringkasan Transaksi</h4>
             <div className="wrapper-button d-flex">
-              <button className="button btn-ungu px-3 py-2 me-2">
+              <button className="button btn-ungu px-3 py-2 me-2 box-sh">
                 Pemasukan <i className="bi bi-plus-circle ms-1"></i>
               </button>
-              <button className="button btn-pink px-3 py-2">
+              <button className="button btn-pink px-3 py-2 box-sh">
                 Pengeluaran <i className="bi bi-dash-circle-dotted ms-1"></i>
               </button>
             </div>
