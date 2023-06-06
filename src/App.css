@@ -3,7 +3,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  background: #eaeaea;
+}
 h1 {
   font-family: "Poppins";
   font-style: normal;
@@ -95,6 +97,10 @@ h6 {
   color: #3c3dbf;
 }
 
+.box-sh {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
 .icon-wrapper-out {
   display: flex;
   flex-direction: column;
@@ -112,7 +118,6 @@ h6 {
 .text-ungu {
   color: #3c3dbf;
 }
-
 
 .money-in {
   font-size: 18px;
@@ -166,4 +171,3 @@ h6 {
 .btn-ungu:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-
