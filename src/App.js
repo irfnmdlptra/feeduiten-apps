@@ -2,9 +2,11 @@ import React from "react";
 import "./App.css";
 
 class App extends React.Component {
-  // constructor() {
-  //   super();
-  // }
+  constructor() {
+    super();
+
+    thish
+  }
   render() {
     return (
       <div className="container py-5">
