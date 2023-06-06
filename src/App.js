@@ -48,7 +48,7 @@ class App extends React.Component {
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
               <span className="title-sm">Pemasukan</span>
-              <h3 className="fw-bold">Rp. 2.000.000,-</h3>
+              <h3 className="fw-bold">Rp. {this.state.pemasukanUang} ,-</h3>
               <div>
                 <span className="title-sm text-ungu fw-bold">50</span>
                 <span className="title-sm"> Transaksi</span>
@@ -62,7 +62,7 @@ class App extends React.Component {
                 <i className="bi bi-cash-stack"></i>
               </div>
               <span className="title-sm">Pemakaian</span>
-              <h3 className="fw-bold">Rp. 500.000,-</h3>
+              <h3 className="fw-bold">Rp. {this.state.pengeluaranUang} ,-</h3>
               <div>
                 <span className="title-sm text-ungu fw-bold">50</span>
                 <span className="title-sm"> Transaksi</span>
