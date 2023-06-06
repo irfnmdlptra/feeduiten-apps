@@ -97,7 +97,7 @@ class App extends React.Component {
                     <span className="title-sm">{sum.tanggal} </span>
                   </div>
                 </div>
-                <h6 className="money-in">Rp.1.000.000</h6>
+                <h6 className="money-in">Rp. {sum.nominal} </h6>
               </div>
             );
           })}
