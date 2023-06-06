@@ -97,7 +97,7 @@ class App extends React.Component {
                     <span className="title-sm">{sum.tanggal} </span>
                   </div>
                 </div>
-                <h6 className="money-in fw-bold">Rp. {sum.nominal} </h6>
+                <h6 className={sum.status === 'IN' ? 'money-in' : 'money-out'} >Rp. {sum.nominal} </h6>
               </div>
             );
           })}

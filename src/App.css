@@ -118,10 +118,12 @@ h6 {
 }
 
 .money-in {
+  font-size: 18px ;
   font-weight: 600 !important;
   color: #ff3666;
 }
 .money-out {
+  font-size: 18px ;
   font-weight: 600 !important;
   color: #3c3dbf;
 }
