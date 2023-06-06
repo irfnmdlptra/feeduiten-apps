@@ -85,18 +85,22 @@ class App extends React.Component {
         </div>
 
         <div className="row mt-4">
-          <div className="col-12 d-flex justify-content-between align-items-center">
-            <div className="d-flex align-items-center">
-              <div className="icon-wrapper ">
-                <i className="bi bi-wallet2" aria-hidden="true"></i>
+          {this.state.summary.map(() => {
+            return (
+              <div className="col-12 d-flex justify-content-between align-items-center">
+                <div className="d-flex align-items-center">
+                  <div className="icon-wrapper ">
+                    <i className="bi bi-wallet2" aria-hidden="true"></i>
+                  </div>
+                  <div className="transaction ms-3 d-flex flex-column">
+                    <h5>Menerima Kiriman</h5>
+                    <span className="title-sm">1 Juli 2023</span>
+                  </div>
+                </div>
+                <h6 className="money-in">Rp.1.000.000</h6>
               </div>
-              <div className="transaction ms-3 d-flex flex-column">
-                <h5>Menerima Kiriman</h5>
-                <span className="title-sm">1 Juli 2023</span>
-              </div>
-            </div>
-            <h6 className="money-in">Rp.1.000.000</h6>
-          </div>
+            );
+          })}
         </div>
       </div>
     );
