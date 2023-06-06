@@ -56,7 +56,7 @@ class App extends React.Component {
           </div>
 
           <div className="col-6">
-            <div className="card-wrapper p-4">
+            <div className="card-wrapper p-4 ">
               <div className="icon-wrapper-out box-sh">
                 <i className="bi bi-cash-stack"></i>
               </div>
