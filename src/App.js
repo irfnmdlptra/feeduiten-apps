@@ -16,7 +16,7 @@ class App extends React.Component {
         {
           deskripsi : 'Menerima Gaji',
           tanggal : '1 July 2023',
-          nominal
+          nominal : 1000000,
         }
       ]
 
