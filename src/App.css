@@ -95,6 +95,20 @@ h6 {
   color: #3c3dbf;
 }
 
+.icon-wrapperRed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 35px;
+  height: 35px;
+  background: #ffecf0;
+  border-radius: 6px;
+  color: #ff3666;
+}
+
 .text-ungu {
   color: #3c3dbf;
 }
