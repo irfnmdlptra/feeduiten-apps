@@ -5,7 +5,20 @@ class App extends React.Component {
   constructor() {
     super();
 
-    thish
+    this.state = {
+      sisaUang: 0,
+      persentaseUang: 0,
+      pemasukanUang: 0,
+      pengeluaranUang: 0,
+      transaksiIN: 0,
+      transaksiOUT: 0,
+      summary: [
+        {
+          deskripsi :
+        }
+      ]
+
+    };
   }
   render() {
     return (
