@@ -94,7 +94,7 @@ class App extends React.Component {
                   </div>
                   <div className="transaction ms-3 d-flex flex-column">
                     <h5>{sum.deskripsi} </h5>
-                    <span className="title-sm">1 Juli 2023</span>
+                    <span className="title-sm">{sum.tanggal} </span>
                   </div>
                 </div>
                 <h6 className="money-in">Rp.1.000.000</h6>
