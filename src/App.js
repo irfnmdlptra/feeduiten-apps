@@ -21,9 +21,9 @@ class App extends React.Component {
         },
         {
           deskripsi : 'Makan Nasi Padang',
-          tanggal : '1 July 2023',
-          nominal : 1000000,
-          category : 'IN'
+          tanggal : '2 July 2023',
+          nominal : 20000,
+          category : 'OUT'
         },
       ]
 
