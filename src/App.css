@@ -3,9 +3,7 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-body {
-  background: #e8e8e8;
-}
+
 h1 {
   font-family: "Poppins";
   font-style: normal;
@@ -16,7 +14,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 h2 {
