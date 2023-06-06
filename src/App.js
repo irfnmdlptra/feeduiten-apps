@@ -43,7 +43,7 @@ class App extends React.Component {
         <div className="row mt-4">
           <div className="col-6">
             <div className="card-wrapper p-4">
-              <div className="icon-wrapper">
+              <div className="icon-wrapper-in">
                 <i className="bi bi-wallet2" aria-hidden="true"></i>
               </div>
               <span className="title-sm">Pemasukan</span>
@@ -57,7 +57,7 @@ class App extends React.Component {
 
           <div className="col-6">
             <div className="card-wrapper p-4">
-              <div className="icon-wrapper">
+              <div className="icon-wrapper-out">
                 <i className="bi bi-cash-stack"></i>
               </div>
               <span className="title-sm">Pemakaian</span>
@@ -89,7 +89,7 @@ class App extends React.Component {
             return (
               <div className="col-12 d-flex mb-3 justify-content-between align-items-center">
                 <div className="d-flex align-items-center">
-                  <div className={sum.category === 'IN' ? 'icon-wrapper' : 'icon-wrapper-out'}>
+                  <div className={sum.category === 'IN' ? 'icon-wrapper-in' : 'icon-wrapper-out'}>
                     <i className={sum.category === 'IN' ? 'bi bi-wallet2' : 'bi bi-bag-dash'} aria-hidden="true"></i>
                   </div>
                   <div className="transaction ms-3 d-flex flex-column">
