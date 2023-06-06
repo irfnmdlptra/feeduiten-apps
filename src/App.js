@@ -89,7 +89,7 @@ class App extends React.Component {
             return (
               <div className="col-12 d-flex mb-3 justify-content-between align-items-center">
                 <div className="d-flex align-items-center">
-                  <div className={sum.category === 'IN' ? 'icon-wrapper' : 'icon-wrapperRed'}>
+                  <div className={sum.category === 'IN' ? 'icon-wrapper' : 'icon-wrapper-out'}>
                     <i className={sum.category === 'IN' ? 'bi bi-wallet2' : 'bi bi-bag-dash'} aria-hidden="true"></i>
                   </div>
                   <div className="transaction ms-3 d-flex flex-column">

@@ -81,7 +81,7 @@ h6 {
   border-radius: 14px;
 }
 
-.icon-wrapper {
+.icon-wrapper-in {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,7 +95,7 @@ h6 {
   color: #3c3dbf;
 }
 
-.icon-wrapperRed {
+.icon-wrapper-out {
   display: flex;
   flex-direction: column;
   justify-content: center;
