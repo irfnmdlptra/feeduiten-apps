@@ -14,7 +14,9 @@ class App extends React.Component {
       transaksiOUT: 0,
       summary: [
         {
-          deskripsi :
+          deskripsi : 'Menerima Gaji',
+          tanggal : '1 July 2023',
+          nominal
         }
       ]
 
