@@ -20,7 +20,7 @@ class App extends React.Component {
           category : 'IN'
         },
         {
-          deskripsi : 'Menerima Gaji',
+          deskripsi : 'Makan Nasi Padang',
           tanggal : '1 July 2023',
           nominal : 1000000,
           category : 'IN'
