@@ -93,7 +93,7 @@ class App extends React.Component {
                     <i className="bi bi-wallet2" aria-hidden="true"></i>
                   </div>
                   <div className="transaction ms-3 d-flex flex-column">
-                    <h5>Menerima Kiriman</h5>
+                    <h5>{sum.deskripsi} </h5>
                     <span className="title-sm">1 Juli 2023</span>
                   </div>
                 </div>
