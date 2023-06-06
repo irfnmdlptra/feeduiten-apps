@@ -36,7 +36,7 @@ class App extends React.Component {
           <div className="col-12 text-center">
             <h1 className="fw-bold">FEEDUITEN APPS</h1>
             <hr className="w-75 mx-auto" />
-            <h2 className="fw-bold">Rp. {this.state.sisaUang}</h2>
+            <h2 className="fw-bold">Rp. {this.state.sisaUang} ,-</h2>
             <span className="title-sm">Sisa uang kamu tersisa 75% lagi</span>
           </div>
         </div>
