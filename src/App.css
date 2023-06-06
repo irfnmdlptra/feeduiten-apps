@@ -112,72 +112,58 @@ h6 {
 .text-ungu {
   color: #3c3dbf;
 }
-.button {
-  border: none;
-  border-radius: 10px;
-  height: 37px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
 
-.btn-ungu {
-  background-color: #3c3dbf;
-}
-
-.btn-pink {
-  background-color: #ff3666;
-}
 
 .money-in {
-  font-size: 18px ;
+  font-size: 18px;
   font-weight: 600 !important;
   color: #3c3dbf;
 }
 .money-out {
-  font-size: 18px ;
+  font-size: 18px;
   font-weight: 600 !important;
   color: #ff3666;
 }
 
-
-.custom-btn {
-  width: 130px;
-  height: 40px;
+.button {
+  height: 37px;
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    7px 7px 20px 0px rgba(0,0,0,.1),
-    4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
- }
- 
- .btn-1 {
-  background: rgb(96,9,240);
-  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  gap: 10px;
+}
+
+.btn-pink {
+  background: rgb(240, 9, 171);
+  background: linear-gradient(0deg, rgba(240, 9, 171, 1) 0%, rgba(240, 9, 171, 1) 100%);
   border: none;
- }
- 
- .btn-1:before {
+}
+
+.btn-ungu {
+  background: rgb(96, 9, 240);
+  background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
+  border: none;
+}
+
+.btn-pink:before,
+.btn-ungu:before {
   height: 0%;
   width: 2px;
- }
- 
- .btn-1:hover {
-  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-               -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-     inset -4px -4px 6px 0 rgba(255,255,255,.2),
-     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
- }
- 
+}
+
+.btn-pink:hover,
+.btn-ungu:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
