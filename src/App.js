@@ -97,6 +97,7 @@ class App extends React.Component {
                     <span className="title-sm">{sum.tanggal} </span>
                   </div>
                 </div>
+                {/* Conditional Rendering  untuk mengendalikan tampilan elemen di halaman berdasarkan kondisi tertentu.  */}
                 <h6 className={sum.status === 'IN' ? 'money-in' : 'money-out'} >Rp. {sum.nominal} </h6>
               </div>
             );
