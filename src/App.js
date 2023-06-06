@@ -85,7 +85,7 @@ class App extends React.Component {
         </div>
 
         <div className="row mt-4">
-          {this.state.summary.map(() => {
+          {this.state.summary.map((sum) => {
             return (
               <div className="col-12 d-flex justify-content-between align-items-center">
                 <div className="d-flex align-items-center">
