@@ -112,6 +112,8 @@ class ModalCreate extends React.Component {
     this.state = {
       show: false,
       deskripsi: "",
+      nominal: 0,
+      tanggal: "",
     };
 
     this.handleShow = this.handleShow.bind(this);
@@ -135,7 +137,7 @@ class ModalCreate extends React.Component {
     this.setState({
       deskripsi: evt.target.value,
     });
-    console.log(this.state.deskripsi)
+    console.log(this.state.deskripsi);
   }
   render() {
     return (
