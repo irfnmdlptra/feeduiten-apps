@@ -129,6 +129,10 @@ class ModalCreate extends React.Component {
       show: true,
     });
   }
+
+  handleChange() {
+    
+  }
   render() {
     return (
       <>
@@ -151,7 +155,7 @@ class ModalCreate extends React.Component {
               placeholder="Masukan Deskripsi" 
               name="Deskripsi" 
               value={this.state.deskripsi} 
-              onChange={}
+              onChange={this.handleChange}
               />
             </div>
           </Modal.Body>
