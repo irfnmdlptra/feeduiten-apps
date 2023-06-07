@@ -160,8 +160,8 @@ class ModalCreate extends React.Component {
               <input type="number" className="form-control" placeholder="Masukan Nominal" name="nominal" value={this.state.nominal} onChange={this.handleChange} />
             </div>
             <div className="mb-3">
-              <label className="form-label">Email address</label>
-              <input type="text" className="form-control" placeholder="Masukan Deskripsi" name="Deskripsi" value={this.state.deskripsi} onChange={this.handleChange} />
+              <label className="form-label">Tanggal</label>
+              <input type="date" className="form-control" placeholder="Masukan Deskripsi" name="Deskripsi" value={this.state.deskripsi} onChange={this.handleChange} />
             </div>
           </Modal.Body>
           <Modal.Footer>
