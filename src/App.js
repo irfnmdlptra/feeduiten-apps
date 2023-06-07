@@ -31,8 +31,8 @@ class App extends React.Component {
     };
   }
 
-  tambahItem() {
-    console.log("okk dvdsv");
+  tambahItem(objek) {
+    console.log(objek);
   }
   render() {
     return (
@@ -118,7 +118,7 @@ class ModalCreate extends React.Component {
       deskripsi: "",
       nominal: 0,
       tanggal: "",
-      category: '',
+      category: "",
     };
 
     this.handleShow = this.handleShow.bind(this);
@@ -153,9 +153,9 @@ class ModalCreate extends React.Component {
       nominal: this.state.nominal,
       tanggal: this.state.tanggal,
       category: this.state.category,
-    }
+    };
     const fnTambahItem = this.props.action;
-    fnTambahItem(this.state);
+    fnTambahItem(Data);
     this.setState({
       show: false,
     });
