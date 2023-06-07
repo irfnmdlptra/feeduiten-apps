@@ -150,10 +150,9 @@ class ModalCreate extends React.Component {
               className="form-control"  
               placeholder="Masukan Deskripsi" 
               name="Deskripsi" 
-              value={
-                this.state.deskripsi
-
-                } />
+              value={this.state.deskripsi} 
+              onChange={}
+              />
             </div>
           </Modal.Body>
           <Modal.Footer>
