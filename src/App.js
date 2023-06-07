@@ -131,7 +131,7 @@ class ModalCreate extends React.Component {
   }
 
   handleChange() {
-    
+    console.log('ok')
   }
   render() {
     return (
