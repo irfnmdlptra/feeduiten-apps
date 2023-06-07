@@ -116,6 +116,7 @@ class ModalCreate extends React.Component {
 
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleClose() {
@@ -131,7 +132,6 @@ class ModalCreate extends React.Component {
   }
 
   handleChange(evt) {
-    console.log(evt.target.value)
     this.setState({
       deskripsi : evt.target.value
     } ) 
