@@ -139,7 +139,14 @@ class ModalCreate extends React.Component {
           <Modal.Header closeButton>
             <Modal.Title>{this.props.modalheading} </Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+          <Modal.Body>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">
+                Email address
+              </label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+            </div>
+          </Modal.Body>
           <Modal.Footer>
             <Button variant="primary" onClick={this.handleClose}>
               Save Changes
