@@ -29,10 +29,14 @@ class App extends React.Component {
         },
       ],
     };
+    this.tambahItem = this.tambahItem.bind(this)
   }
 
   tambahItem(objek) {
     console.log(objek);
+    this.setState({
+      summary: [...this.state.summary, objek],
+    });
   }
   render() {
     return (
