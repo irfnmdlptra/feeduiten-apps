@@ -111,7 +111,7 @@ class ModalCreate extends React.Component {
     super();
     this.state = {
       show: false,
-      deskripsi: ''
+      deskripsi: "",
     };
 
     this.handleShow = this.handleShow.bind(this);
@@ -133,8 +133,9 @@ class ModalCreate extends React.Component {
 
   handleChange(evt) {
     this.setState({
-      deskripsi : evt.target.value
-    } ) 
+      deskripsi: evt.target.value,
+    });
+    console.log(this.state.deskripsi)
   }
   render() {
     return (
@@ -149,17 +150,8 @@ class ModalCreate extends React.Component {
           </Modal.Header>
           <Modal.Body>
             <div className="mb-3">
-              <label  className="form-label">
-                Email address
-              </label>
-              <input 
-              type="text" 
-              className="form-control"  
-              placeholder="Masukan Deskripsi" 
-              name="Deskripsi" 
-              value={this.state.deskripsi} 
-              onChange={this.handleChange}
-              />
+              <label className="form-label">Email address</label>
+              <input type="text" className="form-control" placeholder="Masukan Deskripsi" name="Deskripsi" value={this.state.deskripsi} onChange={this.handleChange} />
             </div>
           </Modal.Body>
           <Modal.Footer>
