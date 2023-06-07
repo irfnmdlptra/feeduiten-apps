@@ -144,13 +144,12 @@ class ModalCreate extends React.Component {
     this.setState({
       [evt.target.name]: evt.target.value,
     });
-    console.log(this.state);
   }
 
   tambahItem() {
     const Data = {
       deskripsi: this.state.deskripsi,
-      nominal: this.state.nominal,
+      nominal: parseInt(this.state.nominal),
       tanggal: this.state.tanggal,
       category: this.state.category,
     };
