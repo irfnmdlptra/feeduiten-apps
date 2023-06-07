@@ -137,9 +137,8 @@ class ModalCreate extends React.Component {
     const inputan = evt.target.name;
     const value = evt.target.value;
     this.setState({
-      inputan: value,
+      [inputan]: value,
     });
-    console.log(this.state.deskripsi);
   }
   render() {
     return (
