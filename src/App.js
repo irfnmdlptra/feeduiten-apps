@@ -32,7 +32,7 @@ class App extends React.Component {
   }
 
   tambahItem() {
-    console.log('okk')
+    console.log("okk");
   }
   render() {
     return (
@@ -135,7 +135,7 @@ class ModalCreate extends React.Component {
   handleShow() {
     this.setState({
       show: true,
-      category: this.props.category
+      category: this.props.category,
     });
   }
 
@@ -143,12 +143,13 @@ class ModalCreate extends React.Component {
     this.setState({
       [evt.target.name]: evt.target.value,
     });
-    console.log(this.state)
+    console.log(this.state);
   }
 
   tambahItem() {
-    console.log('okk')
-    const fnTambahItem = this.props.action
+    console.log("okk");
+    const fnTambahItem = this.props.action;
+    fnTambahItem(this.state);
     this.setState({
       show: false,
     });
@@ -184,7 +185,7 @@ class ModalCreate extends React.Component {
           </Modal.Body>
           <Modal.Footer>
             <button className={this.props.variant} onClick={this.tambahItem}>
-              Save 
+              Save
             </button>
           </Modal.Footer>
         </Modal>
