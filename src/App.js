@@ -140,11 +140,11 @@ class ModalCreate extends React.Component {
             <Modal.Title>{this.props.modalheading} </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label  className="form-label">
                 Email address
               </label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+              <input type="text" className="form-control"  placeholder="Masukan Deskripsi" />
             </div>
           </Modal.Body>
           <Modal.Footer>
