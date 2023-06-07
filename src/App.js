@@ -30,6 +30,10 @@ class App extends React.Component {
       ],
     };
   }
+
+  tambahItem() {
+    console.log('okk')
+  }
   render() {
     return (
       <div className="container py-5">
@@ -76,8 +80,8 @@ class App extends React.Component {
           <div className="col-12 d-flex align-items-center justify-content-between">
             <h4>Ringkasan Transaksi</h4>
             <div className="wrapper-button d-flex">
-              <ModalCreate category="IN" variant="button btn-ungu px-3 py-2 me-2 box-sh" text="Pemasukan" icon="bi bi-plus-circle ms-1" modalheading="Tambahkan Pemasukan" />
-              <ModalCreate category="OUT" variant="button btn-pink px-3 py-2 box-sh" text="Pengeluaran" icon="bi bi-dash-circle-dotted ms-1" modalheading="Tambahkan Pengeluaran" />
+              <ModalCreate action={this.tambahItem} category="IN" variant="button btn-ungu px-3 py-2 me-2 box-sh" text="Pemasukan" icon="bi bi-plus-circle ms-1" modalheading="Tambahkan Pemasukan" />
+              <ModalCreate action={this.tambahItem} category="OUT" variant="button btn-pink px-3 py-2 box-sh" text="Pengeluaran" icon="bi bi-dash-circle-dotted ms-1" modalheading="Tambahkan Pengeluaran" />
             </div>
           </div>
         </div>
@@ -131,6 +135,7 @@ class ModalCreate extends React.Component {
   handleShow() {
     this.setState({
       show: true,
+      category: this.props.category
     });
   }
 
@@ -143,6 +148,7 @@ class ModalCreate extends React.Component {
 
   tambahItem() {
     console.log('okk')
+    const fnTambahItem = this.props.action
     this.setState({
       show: false,
     });
