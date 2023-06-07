@@ -144,7 +144,7 @@ class ModalCreate extends React.Component {
               <label  className="form-label">
                 Email address
               </label>
-              <input type="text" className="form-control"  placeholder="Masukan Deskripsi" />
+              <input type="text" className="form-control"  placeholder="Masukan Deskripsi" name="Deskripsi" />
             </div>
           </Modal.Body>
           <Modal.Footer>
