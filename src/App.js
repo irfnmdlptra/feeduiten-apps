@@ -134,6 +134,8 @@ class ModalCreate extends React.Component {
   }
 
   handleChange(evt) {
+    const key = evt.target.name;
+    const value = evt.target.value;
     this.setState({
       deskripsi: evt.target.value,
     });
