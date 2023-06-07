@@ -130,8 +130,11 @@ class ModalCreate extends React.Component {
     });
   }
 
-  handleChange() {
-    console.log('ok')
+  handleChange(evt) {
+    console.log(evt.target.value)
+    this.setState({
+      deskripsi : evt.target.value
+    } ) 
   }
   render() {
     return (
