@@ -119,6 +119,7 @@ class ModalCreate extends React.Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.tambahItem = this.tambahItem.bind(this);
   }
 
   handleClose() {
@@ -138,6 +139,13 @@ class ModalCreate extends React.Component {
       [evt.target.name]: evt.target.value,
     });
     console.log(this.state)
+  }
+
+  tambahItem() {
+    console.log('okk')
+    this.setState({
+      show: false,
+    });
   }
   render() {
     return (
@@ -169,7 +177,7 @@ class ModalCreate extends React.Component {
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <button className={this.props.variant} onClick={this.handleClose}>
+            <button className={this.props.variant} onClick={this.tambahItem}>
               Save 
             </button>
           </Modal.Footer>
