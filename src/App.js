@@ -32,7 +32,7 @@ class App extends React.Component {
   }
 
   tambahItem() {
-    console.log("okk");
+    console.log("okk dvdsv");
   }
   render() {
     return (
@@ -118,6 +118,7 @@ class ModalCreate extends React.Component {
       deskripsi: "",
       nominal: 0,
       tanggal: "",
+      category: '',
     };
 
     this.handleShow = this.handleShow.bind(this);
@@ -147,7 +148,12 @@ class ModalCreate extends React.Component {
   }
 
   tambahItem() {
-    console.log("okk");
+    const Data = {
+      deskripsi: this.state.deskripsi,
+      nominal: this.state.nominal,
+      tanggal: this.state.tanggal,
+      category: this.state.category,
+    }
     const fnTambahItem = this.props.action;
     fnTambahItem(this.state);
     this.setState({
