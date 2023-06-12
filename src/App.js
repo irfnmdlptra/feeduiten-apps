@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-
+import ModalCreate from "./components/ModalCreate";
+import Alert from "./components/Alert";
 class App extends React.Component {
   constructor() {
     super();
@@ -14,29 +13,72 @@ class App extends React.Component {
       pengeluaranUang: 0,
       transaksiIN: 0,
       transaksiOUT: 0,
-      summary: [
-        {
-          deskripsi: "Menerima Gaji",
-          tanggal: "1 July 2023",
-          nominal: 1000000,
-          category: "IN",
-        },
-        {
-          deskripsi: "Makan Nasi Padang",
-          tanggal: "2 July 2023",
-          nominal: 20000,
-          category: "OUT",
-        },
-      ],
+      summary: [],
     };
-    this.tambahItem = this.tambahItem.bind(this)
+    this.tambahItem = this.tambahItem.bind(this);
+    this.fnHitung = this.fnHitung.bind(this);
   }
 
   tambahItem(objek) {
-    console.log(objek);
+    let newData = [...this.state.summary, objek];
+    let dataUangIN = newData.filter((item) => item.category === "IN");
+    let nominalUangIN = dataUangIN.map((item) => item.nominal);
+    let jumlahUangIN = nominalUangIN.reduce((total, num) => total + num, 0);
+
+    let dataUangOUT = newData.filter((item) => item.category === "OUT");
+    let nominalUangOUT = dataUangOUT.map((item) => item.nominal);
+    let jumlahUangOUT = nominalUangOUT.reduce((total, num) => total + num, 0);
+    let persenUang = ((jumlahUangIN - jumlahUangOUT) / jumlahUangIN) * 100;
+
     this.setState({
-      summary: [...this.state.summary, objek],
+      pemasukanUang: jumlahUangIN,
+      transaksiIN: nominalUangIN.length,
+      pengeluaranUang: jumlahUangOUT,
+      transaksiOUT: nominalUangOUT.length,
+      sisaUang: jumlahUangIN - jumlahUangOUT,
+      persentaseUang: Math.round(persenUang),
+      summary: newData,
     });
+  }
+
+  fnHitung() {
+    let dataUangIN = this.state.summary.filter((item) => item.category === "IN");
+    let nominalUangIN = dataUangIN.map((item) => item.nominal);
+    let jumlahUangIN = nominalUangIN.reduce((total, num) => total + num);
+
+    let dataUangOUT = this.state.summary.filter((item) => item.category === "OUT");
+    let nominalUangOUT = dataUangOUT.map((item) => item.nominal);
+    let jumlahUangOUT = nominalUangOUT.reduce((total, num) => total + num);
+    let persenUang = ((jumlahUangIN - jumlahUangOUT) / jumlahUangIN) * 100;
+    this.setState({
+      pemasukanUang: jumlahUangIN,
+      transaksiIN: nominalUangIN.length,
+      pengeluaranUang: jumlahUangOUT,
+      transaksiOUT: nominalUangOUT.length,
+      sisaUang: jumlahUangIN - jumlahUangOUT,
+      persentaseUang: Math.round(persenUang),
+    });
+  }
+
+  componentDidMount() {
+    if (this.state.summary.length < 1) {
+    } else {
+      this.fnHitung();
+    }
+
+    const storedSummary = localStorage.getItem("summary");
+
+    if (storedSummary) {
+      this.setState(JSON.parse(storedSummary) );
+  }else {
+    this.fnHitung()
+  }
+  }
+
+  componentDidUpdate() {
+    const { sisaUang, persentaseUang, pemasukanUang, pengeluaranUang, transaksiIN, transaksiOUT, summary } = this.state;
+  const stateToStore = { sisaUang, persentaseUang, pemasukanUang, pengeluaranUang, transaksiIN, transaksiOUT, summary };
+  localStorage.setItem("appState", JSON.stringify(stateToStore));
   }
   render() {
     return (
@@ -59,7 +101,7 @@ class App extends React.Component {
               <span className="title-sm">Pemasukan</span>
               <h3 className="fw-bold">Rp. {this.state.pemasukanUang} ,-</h3>
               <div>
-                <span className="title-sm text-ungu fw-bold">50</span>
+                <span className="title-sm text-ungu fw-bold">{this.state.transaksiIN} </span>
                 <span className="title-sm"> Transaksi</span>
               </div>
             </div>
@@ -73,7 +115,7 @@ class App extends React.Component {
               <span className="title-sm">Pemakaian</span>
               <h3 className="fw-bold">Rp. {this.state.pengeluaranUang} ,-</h3>
               <div>
-                <span className="title-sm text-ungu fw-bold">50</span>
+                <span className="title-sm text-ungu fw-bold">{this.state.transaksiOUT} </span>
                 <span className="title-sm"> Transaksi</span>
               </div>
             </div>
@@ -91,6 +133,7 @@ class App extends React.Component {
         </div>
 
         <div className="row mt-4">
+          { this.state.summary.length < 1 &&  <Alert />}
           {this.state.summary.map((sum, index) => {
             return (
               <div key={index} className="col-12 d-flex mb-3 justify-content-between align-items-center">
@@ -114,93 +157,6 @@ class App extends React.Component {
   }
 }
 
-class ModalCreate extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      show: false,
-      deskripsi: "",
-      nominal: 0,
-      tanggal: "",
-      category: "",
-    };
 
-    this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.tambahItem = this.tambahItem.bind(this);
-  }
-
-  handleClose() {
-    this.setState({
-      show: false,
-    });
-  }
-
-  handleShow() {
-    this.setState({
-      show: true,
-      category: this.props.category,
-    });
-  }
-
-  handleChange(evt) {
-    this.setState({
-      [evt.target.name]: evt.target.value,
-    });
-  }
-
-  tambahItem() {
-    const Data = {
-      deskripsi: this.state.deskripsi,
-      nominal: parseInt(this.state.nominal),
-      tanggal: this.state.tanggal,
-      category: this.state.category,
-    };
-    const fnTambahItem = this.props.action;
-    fnTambahItem(Data);
-    this.setState({
-      show: false,
-    });
-  }
-  render() {
-    return (
-      <>
-        <button onClick={this.handleShow} className={this.props.variant}>
-          {this.props.text} <i className={this.props.icon}></i>
-        </button>
-
-        <Modal show={this.state.show} onHide={this.handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>{this.props.modalheading} </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <div className="mb-3">
-              <label className="form-label">Deskripsi</label>
-              <input type="text" className="form-control" placeholder="Masukan Deskripsi" name="deskripsi" value={this.state.deskripsi} onChange={this.handleChange} />
-            </div>
-            <div className="mb-3">
-              <label className="form-label">Nominal</label>
-              <input type="number" className="form-control" placeholder="Masukan Nominal" name="nominal" value={this.state.nominal} onChange={this.handleChange} />
-            </div>
-            <div className="mb-3">
-              <label className="form-label">Tanggal</label>
-              <input type="date" className="form-control" placeholder="Masukan Tanggal" name="tanggal" value={this.state.tanggal} onChange={this.handleChange} />
-            </div>
-            <div className="mb-3">
-              <label className="form-label">Category</label>
-              <input type="text" className="form-control" placeholder="Masukan Deskripsi" name="category" value={this.state.category} onChange={this.handleChange} />
-            </div>
-          </Modal.Body>
-          <Modal.Footer>
-            <button className={this.props.variant} onClick={this.tambahItem}>
-              Save
-            </button>
-          </Modal.Footer>
-        </Modal>
-      </>
-    );
-  }
-}
 
 export default App;

@@ -47,6 +47,7 @@ h5 {
   font-size: 14px;
   line-height: 21px;
   color: #454545;
+  text-transform: capitalize;
 }
 
 h6 {
@@ -63,6 +64,7 @@ h6 {
   font-size: 13px;
   line-height: 12px !important;
   color: #a1a1a1;
+  text-transform: capitalize;
 }
 .title-md {
   font-family: "Poppins";
@@ -161,4 +163,10 @@ h6 {
 .btn-ungu:before {
   height: 0%;
   width: 2px;
+}
+
+
+.form-control:focus {
+  border: none;
+  outline: none;
 }
