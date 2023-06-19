@@ -46,14 +46,15 @@ class App extends React.Component {
       (item) => item.category === "IN"
     );
     let nominalUangIN = dataUangIN.map((item) => item.nominal);
-    let jumlahUangIN = nominalUangIN.reduce((total, num) => total + num);
+    let jumlahUangIN = nominalUangIN.reduce((total, num) => total + num, 0);
 
     let dataUangOUT = this.state.summary.filter(
       (item) => item.category === "OUT"
     );
     let nominalUangOUT = dataUangOUT.map((item) => item.nominal);
-    let jumlahUangOUT = nominalUangOUT.reduce((total, num) => total + num);
+    let jumlahUangOUT = nominalUangOUT.reduce((total, num) => total + num, 0);
     let persenUang = ((jumlahUangIN - jumlahUangOUT) / jumlahUangIN) * 100;
+
     this.setState({
       pemasukanUang: jumlahUangIN,
       transaksiIN: nominalUangIN.length,
@@ -65,18 +66,18 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    if (this.state.summary.length < 1) {
-    } else {
+    if (this.state.summary.length > 0) {
       this.fnHitung();
     }
+       // Ambil data dari localStorage
+       const storedState = localStorage.getItem("state");
 
-    const storedSummary = localStorage.getItem("summary");
-
-    if (storedSummary) {
-      this.setState(JSON.parse(storedSummary));
-    } else {
-      this.fnHitung();
-    }
+       if (storedState) {
+         const parsedState = JSON.parse(storedState);
+         this.setState(parsedState);
+       } else {
+         this.fnHitung();
+       }
   }
 
   componentDidUpdate() {
@@ -89,6 +90,7 @@ class App extends React.Component {
       transaksiOUT,
       summary,
     } = this.state;
+
     const stateToStore = {
       sisaUang,
       persentaseUang,
@@ -98,8 +100,11 @@ class App extends React.Component {
       transaksiOUT,
       summary,
     };
-    localStorage.setItem("appState", JSON.stringify(stateToStore));
+
+    // Simpan state ke localStorage
+    localStorage.setItem("state", JSON.stringify(stateToStore));
   }
+
   render() {
     return (
       <div className="container py-5">
